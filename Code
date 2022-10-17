@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+class base{
+private:
+    int length;
+public:
+    base(){
+        length=10;
+    }
+    friend int printlength(base);
+
+};
+int printlength(base b){
+    b.length+=10;
+    return b.length;
+}
+int main(){
+base b;
+cout<<printlength(b);
+return 0;
+}
+
